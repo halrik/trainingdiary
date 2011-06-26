@@ -1,1 +1,10 @@
 This is a web app for register training
+
+Git repo: https://github.com/halrik/trainingdiary
+
+When you have changed any of the files:
+
+- git commit (commits the changes to the local repo)
+- git push (pushes the commits to the github repo)
+
+- git status (lists changes not committed)
