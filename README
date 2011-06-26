@@ -13,4 +13,7 @@ The application is hosted on Google App Engine:
 
 - http://rihtrainingdiary.appspot.com/
 
+Maven GAE plugin is used to deploy to GAE:
+
+- http://www.kindleit.net/maven_gae_plugin/maven-gae-plugin/plugin-info.html
 - mvn gae:deploy (to deploy to GAE)
