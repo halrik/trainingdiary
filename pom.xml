@@ -7,7 +7,7 @@
   <name>TrainingDiary</name>
   
   <properties>
-    <gae.version>1.4.3</gae.version>
+    <gae.version>1.5.1</gae.version>
     <gae.plugin.version>0.8.4</gae.plugin.version>
     <spring.version>3.0.5.RELEASE</spring.version>
     <jackson.version>1.6.4</jackson.version>
