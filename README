@@ -8,3 +8,9 @@ When you have changed any of the files:
 - git push (pushes the commits to the github repo)
 
 - git status (lists changes not committed)
+
+The application is hosted on Google App Engine:
+
+- http://rihtrainingdiary.appspot.com/
+
+- mvn gae:deploy (to deploy to GAE)
