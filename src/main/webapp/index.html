@@ -1,34 +1,39 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    
-    <title>RIH Treningsdagbok</title>
-    
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 
-	<link rel="stylesheet" href="stylesheet/trainingdiary.css" />
-    <script src="js/trainingdiary.js"></script>
-  </head>
-  
-  <body class="ui-mobile-viewport">
-    <div data-role="page" id="home" data-theme="a">
-      <div data-role="header" data-theme="a">
-        <h1>RIH Treningsdagbok</h1>
-      </div>
-      <div data-role="content" data-theme="a">
-		<ul data-role="listview" data-theme="a" class="ui-listview-inset">
-			<li data-role="list-divider" role="heading">Meny</li>
-			<li><a href="newWorkout.html">Ny økt</a></li>
-			<li><a href="listWorkouts.html">Vis økter</a></li>
-		</ul>
-      </div>
-      <div data-role="footer" data-theme="a">
-        <p>© 2011 RIH Treningsdagbok</p>
-      </div>
-      
-   </div>
-  </body>
+		<title>RIH Treningsdagbok</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+		<link rel="stylesheet" href="stylesheet/trainingdiary.css" />
+		<script src="js/trainingdiary.js"></script>
+		<script src="js/navigation.js"></script>
+	</head>
+	<body class="ui-mobile-viewport">
+		<div data-role="page" id="home" data-theme="a">
+			<div data-role="header" data-theme="a">
+				<h1>RIH Treningsdagbok</h1>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="newWorkout.html">Ny økt</a>
+						</li>
+						<li>
+							<a href="listWorkouts.html">Vis økter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="content" data-theme="a">
+				Velkommen til RIH Treningsdagbok!
+			</div>
+			<div data-role="footer" data-theme="a">
+				<p>
+					© 2011 RIH Treningsdagbok
+				</p>
+			</div>
+		</div>
+	</body>
 </html>
