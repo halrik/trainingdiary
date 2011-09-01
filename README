@@ -9,11 +9,20 @@ When you have changed any of the files:
 
 - git status (lists changes not committed)
 
-The application is hosted on Google App Engine:
+
+The application is hosted on Heroku:
+
+- http://rihtrainingdiary.herokuapp.com
+
+- git push heroku master (deploys the committed master to heroku)
+
+
+
+The application was earlier hosted on Google App Engine but is not updated there anymore:
 
 - http://rihtrainingdiary.appspot.com/
 
-Maven GAE plugin is used to deploy to GAE:
+Maven GAE plugin was used to deploy to GAE (disabled in pom):
 
 - http://www.kindleit.net/maven_gae_plugin/maven-gae-plugin/plugin-info.html
 - mvn gae:deploy (to deploy to GAE)
