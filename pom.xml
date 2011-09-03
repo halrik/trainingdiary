@@ -8,8 +8,7 @@
 	<name>TrainingDiary</name>
 
 	<properties>
-		<gae.version>1.5.1</gae.version>
-		<gae.plugin.version>0.8.4</gae.plugin.version>
+		<jdk.version>1.6</jdk.version>
 		<spring.version>3.0.5.RELEASE</spring.version>
 		<jackson.version>1.6.4</jackson.version>
 		<jetty.version>6.1.26</jetty.version>
@@ -18,7 +17,11 @@
 		<log4j.version>1.2.16</log4j.version>
 		<maven.compiler.version>2.3.2</maven.compiler.version>
 		<maven.dependency.version>2.3</maven.dependency.version>
-		<jdk.version>1.6</jdk.version>
+		<mongodb.driver.version>2.6.5</mongodb.driver.version>
+<!-- 
+		<gae.version>1.5.1</gae.version>
+		<gae.plugin.version>0.8.4</gae.plugin.version>
+-->
 	</properties>
 
 	<dependencies>
@@ -66,6 +69,12 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.mongodb</groupId>
+		    <artifactId>mongo-java-driver</artifactId>
+		    <version>${mongodb.driver.version}</version>
+		</dependency>		
 
 <!-- 
 		<dependency>
