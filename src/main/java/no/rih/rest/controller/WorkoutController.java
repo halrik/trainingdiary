@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import no.rih.dao.DynamicModelDao;
 import no.rih.rest.bean.Workout;
 import no.rih.rest.bean.WorkoutList;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +23,9 @@ public class WorkoutController {
 	
 	private final static Logger log = Logger.getLogger(WorkoutController.class);
 	
+	@Autowired
+	private DynamicModelDao dynamicModelDao;
+		
 	/*
 	@RequestMapping(method=RequestMethod.GET, value="/workoutxml/{id}")
 	public ModelAndView getWorkoutXML(@PathVariable String id) {
@@ -41,6 +46,8 @@ public class WorkoutController {
 		workouts.add(w);
 		workouts.add(w);
 		
+        log.debug("mongo result: " + dynamicModelDao.findAll());
+		
 		return new WorkoutList(workouts);
 	}
 
@@ -55,7 +62,10 @@ public class WorkoutController {
 	
     @RequestMapping(method = RequestMethod.PUT)
     public @ResponseBody Workout updateWorkout(@RequestBody Workout workout) throws IOException {
-        log.debug("updateWorkout(): " + workout);
+        log.debug("updateWorkout(): " + workout.getName());
+        
+        log.debug(dynamicModelDao.findAll());
+        
         return workout;
     }
 
